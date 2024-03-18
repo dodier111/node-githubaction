@@ -26,5 +26,6 @@ jobs:
 
     - name: Deploy and Run Node.js Application
       run: |
-        sudo /usr/local/bin/pm2 start app.js
+        echo 'admin' | sudo -S /usr/local/bin/pm2 start app.js
+
 
