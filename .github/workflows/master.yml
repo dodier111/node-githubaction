@@ -1,13 +1,11 @@
 name: My First GitHub Actions
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
+
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - name: Checkout code
@@ -26,6 +24,6 @@ jobs:
 
     - name: Deploy and Run Node.js Application
       run: 
-         echo 'admin' | sudo -S /usr/local/bin/pm2 start node.js
+          /usr/local/bin/pm2 start node.js
 
 
