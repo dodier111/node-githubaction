@@ -26,6 +26,6 @@ jobs:
 
     - name: Deploy and Run Node.js Application
       run: |
-        /usr/local/bin/pm2 start node-githubaction/node.js
+        /usr/local/bin/pm2 start node.js
 
 
